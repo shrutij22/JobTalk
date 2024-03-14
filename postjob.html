@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="postjob.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+ 
+</head>
+<body>
+    <div class="container">
+        <form id="contact" action="postjob.php" method="post">
+            <h1>Post New Job </h1>
+            <h3></h3>
+            <div class="row">
+                <!-- first column -->
+                <div class="column">                        
+                    <fieldset> 
+                     Company Name:
+                        <input type="text" placeholder="Company's name *" name="CompanyName" required autofocus>
+                    </fieldset>
+                    <fieldset> 
+                     Job Title:
+                        <input type="text" placeholder="Job Title*" name="jobtitle" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                    Job Description:
+                    <textarea cols="37" rows="5" value="JobDesc" name="JobDesc" required autofocus>  
+                    </textarea>  
+                    </fieldset>
+                    <fieldset> 
+                       HR Email:
+                               <input type="HR email" placeholder="name@example.com" name="email" required autofocus>
+                    </fieldset>
+                     <fieldset> 
+                        Experience:
+                                <input type="text" placeholder="Enter Experience" name="Experience" required autofocus>
+                     </fieldset>
+                     <fieldset>
+                    Address:
+                        <textarea cols="40" rows="5" value="Address" name="Address" required autofocus>  
+                        </textarea>  
+                        </fieldset>
+                </div>
+                <!-- second column -->
+                <div class="column">
+                    <fieldset>
+                    Job Type:
+                    <br>
+                    <select name="Jobtype" id="jobtype" size="1">
+                    <option>Select Job Type</option>
+                    <option>Part Time </option>
+                    <option>Full Time</option>
+                    <option>Freelance</option>
+                    <option>Temporary</option>
+                    </select>  
+                    </fieldset>
+                    <fieldset> 
+                        Offered Salary:
+                                <input type="text" placeholder="Enter Salary" name="salary" required autofocus>
+                     </fieldset>
+                        <fieldset>
+                           Gender:
+                           <br>
+                            <select name="gender" id="gender" size="1">
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Both</option>
+                            <option>Others</option>
+                            </select>  
+                            </fieldset>
+                            <br>
+                            <fieldset> 
+                                Qualification:
+                                        <input type="text" placeholder="Enter  Qualification" name=" Qualification" required autofocus>
+                             </fieldset>
+                             <fieldset> 
+                                Application Deadline Date:
+                                           <input type="date" placeholder="Enter Deadline Date" name="deadlinedate" required autofocus>
+                                </fieldset>
+                      <!--<fieldset>
+                         <p>File Attachment</p>
+                        <input type="file" id="file" required>
+                    </fieldset>-->
+                </div>
+            </div>
+            <!-- submit button -->
+            <fieldset>
+                <button type="submit" name="submit" id="button">Submit Now</button>
+            </fieldset>
+        </form>
+    </div>
+ 
+ 
+    <!-- Javascript to initialize the code list -->
+    <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+     separateDialCode: true
+     });
+  </script>
+</body>
+</html>

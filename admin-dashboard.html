@@ -1,0 +1,314 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Admin Dashboard</title>
+
+    </head>
+    <body>
+      
+      <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJOBTALK</a></h2>
+        <div class="navbar-menu">
+            <a href="admin-dashboard.html">Home</a>
+            <a href="adminlogin.html">&nbsp&nbsp&nbsp&nbsp&nbsp Sign-Out</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>          
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+<div id="sidenav" class="sidenav">
+    <a href="admin-dashboard.html">Dashboard</a>
+  <button class="dropdown-btn">Post Job
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="postjob.html">Post Jobs</a>
+    <a href="postjobtable.php">Post Job Table</a>
+  </div>
+  <a href="table1.php">Registered User</a>
+  <a href="#">View Applies</a>
+  <a href="#">View FeedBack</a>
+  <a href="#">Login Activity</a>
+  <a href="#">View Mail</a>
+  </div>
+<div class="well">
+	<div class="col-div-4-1">
+		<div class="box">
+			<p class="head-1">Active Users</p>
+		</div>
+	</div>
+	<div class="col-div-4-1">
+		<div class="box">
+			<p class="head-1">Post Job</p>
+		</div>
+	</div>
+	<div class="col-div-4-1">
+		<div class="box">
+			<p class="head-1">Hired People</p>
+		</div>
+	</div>
+</div>
+<div class="sub">
+<div class="col-div-4-1">
+  <div class="box-1">
+    <div class="content-box-1">
+    <p class="head-1">Overview</p>
+    <br/>
+    <div class="m-box active1">
+      <p>Member Profit<br/><span class="no-1">Last Months</span></p>
+      <span class="no">+2343</span>
+    </div>
+
+    <div class="m-box">
+      <p>Member Profit<br/><span class="no-1">Last Months</span></p>
+      <span class="no">+2343</span>
+    </div>
+
+    <div class="m-box">
+      <p>Member Profit<br/><span class="no-1">Last Months</span></p>
+      <span class="no">+2343</span>
+    </div>
+
+    <div class="m-box">
+      <p>Member Profit<br/><span class="no-1">Last Months</span></p>
+      <span class="no">+2343</span>
+    </div>
+    
+  </div>
+</div>
+</div>
+<div class="col-div-4-1">
+  <div class="box-1">
+    <div class="content-box-1">
+    <p class="head-1">Total Sale <span>View All</span></p>
+
+    <div class="circle-wrap">
+  <div class="circle">
+    <div class="mask full">
+      <div class="fill"></div>
+    </div>
+    <div class="mask half">
+      <div class="fill"></div>
+    </div>
+    <div class="inside-circle"> 70% </div>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+</div>
+
+  <script>
+
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  </script>
+  </html>
+  <style>
+
+.well
+{
+  margin-left: 310px;
+}
+.sub{
+  margin-left: 310px; 
+}
+.col-div-4-1{
+ margin: 20px;
+  width: 25%;
+  float: left;
+}
+.box{
+  margin-top: 30px;
+
+	width: 88%;
+    height: 130px;
+    background-color: white;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow: 2px 5px 10px rgb(100, 100, 100);
+    position: relative;
+    border-radius: 15px;
+}
+   body{
+    background-image: url('dashimg.jpg');
+    background-size: cover;
+   } 
+
+  /* Upper navigation */
+  .navbar
+  {
+    text-align: end;
+      width: 95%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      position: left;
+      top: 10;
+      left: 0%;
+      padding: 0rem 0rem;
+      z-index: 0;
+      color:white;
+      background: transparent;
+  }
+
+  /* Upper navigation logo jobtalk */
+  .navbar-logo > a {
+    font: 1.5em caliberi;
+      letter-spacing: 3;
+      text-decoration:none;
+      color: white;
+  }
+
+  /* Upper navigation buttons home and sign out */
+  .navbar-menu > a {
+    font: 1.3em caliberi;
+      color: var(--whiteColor);
+      text-decoration: none;
+  
+  }
+  
+/* spacer between upper navigation */
+  .menu-toggle {
+      display: none;
+  }
+    /* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline:none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(109, 45, 121);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.active1{
+	    background: #348f6c;
+    color: white;
+    border-radius: 0;
+}
+.active1 p .no-1{
+	color: white;
+}
+.circle-wrap {
+  margin: 50px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e2e7;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #348f6c;
+}
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(126deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(126deg);
+  }
+}
+.circle-wrap .inside-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+  color: #348f6c;
+}
+
+
+</style>

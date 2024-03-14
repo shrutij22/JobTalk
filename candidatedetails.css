@@ -1,0 +1,156 @@
+/* import google font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+/* selecting everything */
+* {
+ padding: 10px;
+ margin: 5px 0;
+ box-sizing: border-box;
+ width: 100%;
+}
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+p.solid{
+    border-style: solid;
+}
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+body {
+ font-family: 'Open Sans', sans-serif, helvetica, Arial;
+ font-weight: 400;
+ font-size: 14px;
+ color: black;
+ /* body background image */
+ background-image: linear-gradient(135deg, #71b7e6, #9b59b6), url(image.jpg);
+ background-attachment: fixed;
+ background-size: cover;
+  
+}
+.container {
+ max-width: 800px;
+ width: 100%;
+ margin: 0 auto;
+}
+#contact {
+ background-color: rgb(255, 255, 255);
+ padding: 20px;
+ margin: 60px 0;
+}
+#contact input, button {
+ font: 400 15px 'Open Sans', sans-serif, helvetica, Arial;
+}
+#contact h1 {
+ font-size: 35px;
+ font-weight: bold;
+ text-align: center;
+ color: rgb(5, 5, 5);
+}
+#contact h3 {
+ margin: 5px 0px 15px;
+ text-align: center;
+}
+.row {
+ display: flex;
+ width: 100% !important;
+ padding: 20px 0px;
+}
+.row .column {
+ margin: 0px 20px;
+ width: 50%;
+}
+fieldset {
+ border: medium none !important;
+ margin:  0 0 10px;
+ min-width: 100%;
+ width: 100%;
+}
+#contact input {
+ width: 100%;
+ border: 1px solid rgb(150, 150, 150);
+ background-color: #ffffff;
+ padding: 10px;
+ margin: 5px 0;
+}
+input[type = "radio"] {
+ width: 10% !important;
+}
+#contact .row .radio {
+ border: 1px solid rgb(150, 150, 150);
+ background-color: white;
+ margin: 7px 0 10px;
+ padding: 5px;
+}
+#contact .row .idCard{
+ display: flex;
+ height: 45px !important;
+ margin: 5px 0;
+}
+#contact .row .idCard :first-child {
+ width: 80px;
+}
+#contact .row .idCard :last-child {
+ width: 40px;
+}
+#contact .row #phone {
+ max-width: 100% !important;
+ padding-right: 80px;
+}
+#contact input:hover {
+ transition: border-color 0.3s ease-in-out;
+ border: 1px solid rgb(68, 68, 68);
+}
+#contact button {
+ outline: none;
+ border: none;
+ background-color: rgb(79, 144, 182);
+ color: white;
+ margin: 0 0 5px 40%;
+ padding: 10px;
+ font-size: 17px;
+ width: 150px;
+}
+ 
+#contact button:hover {
+ background-color: rgba(150, 59, 192, 0.8);
+}
+ 
+#contact input:focus {
+ outline: 0;
+ border: 1px solid red;
+}
+jobtype {
+width: 150px;
+}
+ 
+/* mobile responsive mode */
+@media screen and (max-width: 580px)  {
+ .row {
+  flex-direction: column;
+ }
+ .row .column {
+  width: 90% !important;
+ }
+ #contact .row #phone {
+ padding-right: 180px;
+}
+}
